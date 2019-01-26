@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Dog Breed App- Home</title>
+    </head>
+
+    <body>
+      {% extends "template.html" %}
+      {% block content %}
+
+      <!-- Grid-->
+      <div class="play_btn">
+        <button type="submit" class="btn">
+          <a href="{{ url_for("upload_file") }}">Play Dog Breeds App</a>
+        </button>
+      </div>
+      <div class="grid_container">
+        <div class="row">
+          <div class="col-md-3">
+            <img class="icon_image" id="dog_img" src="{{ url_for("static", filename="Image/dog.jpg") }}" alt="cute dog">
+          </div>
+          <div class="col-md-5">
+            <img class="icon_image" src="{{ url_for("static", filename="Image/cnn.png") }}" alt="CNN">
+          </div>
+          <div class="col-md-4">
+            <div class="dog_breeds_classifer">
+              <p>Hello, dog.</p>
+              <p>You look like <em>French_bulldog!</em></p>
+            </div>
+            <img class="icon_image" id="classifer_img" src="{{ url_for("static", filename="Image/dog_breed_classifer.png") }}" alt="Dog breed classifer">
+          </div>
+        </div>
+      </div>
+
+      {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Dog Breed App</title>
+        <link rel="stylesheet" href="{{url_for("static", filename="css/style.css")}}">
+    </head>
+
+    <body>
+      <!-- navbar-->
+      <nav class="navbar-static-top">
+        <div class="nav_container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{{url_for("home")}}">DOG BREEDS APP</a>
+          </div>
+        </div>
+      </nav>
+      <!-- End of navbar-->
+
+      <div>
+        <h1> Detect Any Breeds Just By A Photo!</h1>
+        <p> Upload a dog image and see what breed the dog is.</p>
+        <p> Upload your image and see which dog breed you are resemble just for fun.</p>
+      </div>
+
+      {% block content %}
+      {% endblock %}
+
+      <footer>​© 2018 by Yu-Min Lee</footer>
+    </body>
+</html>
