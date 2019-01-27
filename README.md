@@ -4,6 +4,7 @@ CNN Project [Udacity Deep Learning Nanodegree]
 ## Project Overview
 This project is to build a convolutional neural network(CNN) with Keras to classify dog breeds and then turn the code into a web app using Flask. Given an image of a dog, the model will identify an estimate of the canine’s breed. If supplied an image of a human, the code will identify the resembling dog breed.
 
+
 ## Getting Started
 ### Prerequisites
 1. Download the dog datasetDownload the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip). Unzip the folder and place it in the repo.
