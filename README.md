@@ -1,4 +1,4 @@
-# Dog-Breed-Classifier:
+# Dog-Breed-Classifier
 CNN Project [Udacity Deep Learning Nanodegree]
 
 ## Project Overview
