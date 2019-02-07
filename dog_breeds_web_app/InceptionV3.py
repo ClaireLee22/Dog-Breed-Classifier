@@ -5,6 +5,9 @@ from keras.layers import GlobalAveragePooling2D, Dense
 from keras.preprocessing import image
 from extract_bottleneck_features import *
 import numpy as np
+# specify Agg as Matplotlib backend
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
