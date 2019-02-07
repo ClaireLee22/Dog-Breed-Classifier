@@ -89,5 +89,6 @@ jupyter notebook dog_app.ipynb
 
 ## Run Web app
 ```
+cd dog_breeds_web_app
 python ./app.py
 ```
