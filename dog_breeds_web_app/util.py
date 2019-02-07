@@ -70,6 +70,19 @@ def delete_cropped_images():
         os.remove(f)
 
 
+def delete_upload_images():
+    """
+    Delete all upload files
+    Parameters:
+    None
+    Return:
+    None
+    """
+    upload_files = [glob('static/*.png'), glob('static/*.jpg'), glob('static/*.jpeg'), glob('static/*.gif')]
+    for files in upload_files:
+        for f in files:
+            os.remove(f)
+
 ###########################################
 ###  Convert matplotlib figures to png  ###
 ###########################################

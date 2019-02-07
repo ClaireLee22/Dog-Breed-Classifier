@@ -1,5 +1,5 @@
 import cv2
-#specify Agg as Matplotlib backend
+# specify Agg as Matplotlib backend
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt

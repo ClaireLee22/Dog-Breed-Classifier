@@ -72,7 +72,8 @@ class Predict_breeds:
             figdata_pngs.append(figdata_png)
             isHumanOrDogs.append(isHumanOrDog)
             pred_messages.append(pred_message)
-
+        
+        u.delete_upload_images() # delete upload file
         return filter_img_paths, figdata_pngs, isHumanOrDogs, pred_messages
 
 

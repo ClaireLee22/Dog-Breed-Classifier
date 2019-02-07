@@ -1,5 +1,4 @@
 from predict_breeds import play_dog_breeds
-
 import os
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug import secure_filename
@@ -8,14 +7,13 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 dirname = "static"
 UPLOAD_FOLDER = "static/"
-app = Flask(__name__)#creating an instance of the Flask class
-
+app = Flask(__name__) # create an instance of the Flask class
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
-@app.route("/")#default page
+@app.route("/")# default page
 def home():
-    return render_template("home.html")#render_template() looks for a template (HTML file) in the templates folder
+    return render_template("home.html") # render_template() looks for a template (HTML file) in the templates folder
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -46,4 +44,4 @@ def upload_file(filePath=None, filter_img_paths=None, figdata_pngs=None, isHuman
         return render_template("upload.html")
 
 if __name__ == "__main__":
-    app.run(debug=True) #allows possible Python errors to appear on the web page.
+    app.run(debug=True) # allow possible Python errors to appear on the web page.
