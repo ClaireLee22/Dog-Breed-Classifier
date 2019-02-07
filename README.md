@@ -88,7 +88,7 @@ jupyter notebook dog_app.ipynb
 8. (Optional) **If you are running the project on your local machine (and not using AWS)**, before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
 
 ## Run Web app
-1. install Flask
+1. Install Flask
 ```
 pip install Flask
 ```
