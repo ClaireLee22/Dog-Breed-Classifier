@@ -20,6 +20,7 @@ Build a convolutional neural network(CNN) with Keras to classify dog breeds and 
 - Turn the code into a web app using Flask
 
 ### Project Results
+The model can successfully detect dogs and faces and make predictions on the given image.
 If detect a dog, the model will identify an estimate of the dog's breed. If detect any face, the code will identify the resembling dog breed for each face and overlay filters with dog's ears, nose and tongue on it.
 
 <img src="dog_prediction.png">
